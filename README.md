@@ -6,7 +6,7 @@
 ### Project Title
 Udacity GitHub Project
 ### Description
-This project goes through the steps of setting up a GitHub account and goin through version control for the bikeshare python project.
+This project goes through the steps of setting up a GitHub account and goin through version control for the bikeshare python project. Uses csv files and python code.
 ### Files used
 bikeshare.py
 chicago.csv
