@@ -105,6 +105,7 @@ def load_data(city, month, day):
     # filter by day of week to create the new dataframe
     df = df[df['day_of_week'] == day.title()]
 
+    #future exploration would be to add 'all' as possibility for month and day filter
     return df
 
 def time_stats(df):
