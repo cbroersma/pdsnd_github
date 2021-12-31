@@ -9,7 +9,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_city():
     """
     Asks user to specify a city to analyze.
-
     Returns:
         (str) city - name of the city to analyze
     """
@@ -39,7 +38,6 @@ def get_city():
 def get_time_filter():
     """
     Asks user to specify a month and day to filter by.
-
     Returns:
         (str) month - name of the month to filter by
         (str) day - name of day to filter by
@@ -75,7 +73,6 @@ def get_time_filter():
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day.
-
     Args:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by
@@ -122,9 +119,9 @@ def time_stats(df):
     print("Most Popular Month: ", popular_month)
 
     # display the most common day of week
-    popular_day = df['day_of_week'].mode()[0]
+    common_day = df['day_of_week'].mode()[0]
 
-    print("Most Popular Day of the Week: ", popular_day)
+    print("Most Popular Day of the Week: ", common_day)
 
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
@@ -256,7 +253,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         display_data(df)
-
+        print("That was fun!")
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
