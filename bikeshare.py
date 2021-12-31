@@ -244,8 +244,7 @@ def display_data(df):
         elif again != 'yes':
             break
 
-
-
+#main runs functions defined above
 def main():
     while True:
         city = get_city()
@@ -256,9 +255,10 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         display_data(df)
-
+        print("That was fun!")
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
+            print("Goodbye")
             break
 
 
